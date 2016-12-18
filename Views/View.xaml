@@ -1,0 +1,13 @@
+﻿<!--View koniecznie musi być UserControl zamiast Window-->
+    <UserControl x:Class="Mvvm_Template.Views.View"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        >
+    <UniformGrid Columns="1">
+        
+        <!--Do każdej kontrolki mogę zrobić Biding z mojego ViewModel-->
+        <TextBox Text="{Binding MojeUstawienia.Properties}"/>
+        <TextBox Text="{Binding RRR}"/>
+        <Button Command="{Binding HiButtonCommand}" Content="Submit"/>
+    </UniformGrid>
+</UserControl>
